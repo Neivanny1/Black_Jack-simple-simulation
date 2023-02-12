@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BLACKJACK TABLE</h1>
+    <div id="watch" class="watch" onload="display()"></div><br>
+    <p id="message-el">Want to play a round?</p>
+    <p id="drop-el">Select Amount:
+        <select name="currency" id="currency-el">
+            <option value="$">USD</option>
+            <option value="Tsh">Tsh</option>
+            <option value="Ksh">Ksh</option>
+            <option value="UGsh">UGsh</option>
+        </select> 
+        <select name="amount" id="amount-el">
+            <option value="10">10</option>
+            <option value="100">100</option>
+            <option value="1000">1000</option>
+            <option value="10000">10000</option>
+            <option value="100000">100000</option>
+            <option value="1000000">1000000</option>
+        </select> <br><br>
+        <button onclick="deposit()">DEPOSIT</button> 
+        <button onclick="withdraw()">WITHDRAW</button>
+         </p>
+            
+    <p id="cards-el">Cards:</p>
+    <p id="sum-el">Sum:</p>
+    <button onclick="startGame()">START GAME</button> 
+    <br> <br><button onclick="newCard()">NEW CARD</button>
+
+    <p id="pe-el">Current Stake: 0</p> 
+         <p id="player-el">Amount withdrawn: 0</p> 
+        
+    </body>
+<script src="index.js"></script>
+</html>
